@@ -6,6 +6,22 @@ Let's you quickly run any `go *` command inside of a Docker container.
 $ gocker -go-version 1.9 -go-mods off test -v ./...
 ```
 
+Generates and runs a Dockerfile similar to:
+
+```Dockerfile
+FROM golang:1.9
+
+ENV GO111MODULE=off
+
+WORKDIR $GOPATH/src/github.com/markbates/gocker
+
+COPY . .
+
+RUN go get -v
+
+RUN go test -v ./...
+```
+
 ## Usage
 
 ```bash
