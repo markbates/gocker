@@ -1,0 +1,16 @@
+FROM golang:<%= opts.GoVersion %>
+
+ENV GO111MODULE=<%= opts.GoMods %>
+
+WORKDIR <%= opts.Path %>
+
+COPY . .
+
+<%= if (opts.WithDep) { %>
+RUN go get github.com/golang/dep/cmd/dep
+RUN dep ensure -v
+<% } else { %>
+RUN go get -v
+<% } %>
+
+RUN <%= opts.GoCmd() %>
