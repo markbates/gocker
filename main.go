@@ -4,6 +4,7 @@ import (
 	"context"
 	"flag"
 	"log"
+	"os"
 
 	"github.com/gobuffalo/genny"
 	"github.com/markbates/gocker/genny/gocker"
@@ -18,6 +19,9 @@ var options = struct {
 }
 
 func main() {
+	defer func() {
+		os.Remove("Dockerfile.gocker")
+	}()
 	flag.BoolVar(&options.DryRun, "dry-run", false, "dry run")
 	flag.BoolVar(&options.WithDep, "with-dep", false, "with dep management")
 	flag.StringVar(&options.GoVersion, "go-version", "latest", "go version to run")

@@ -26,9 +26,5 @@ func New(opts *Options) (*genny.Generator, error) {
 
 	g.Command(exec.Command("docker", "build", ".", "-f", "Dockerfile.gocker"))
 
-	g.RunFn(func(r *genny.Runner) error {
-		return r.Disk.Delete("Dockerfile.gocker")
-	})
-
 	return g, nil
 }
