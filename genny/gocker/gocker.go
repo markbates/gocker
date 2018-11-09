@@ -26,5 +26,12 @@ func New(opts *Options) (*genny.Generator, error) {
 
 	g.Command(exec.Command("docker", "build", ".", "-f", "Dockerfile.gocker"))
 
+	g.RunFn(func(r *genny.Runner) error {
+		if _, err := r.LookPath("say"); err != nil {
+			return nil
+		}
+		return r.Exec(exec.Command("say", "gocker has finished"))
+	})
+
 	return g, nil
 }
