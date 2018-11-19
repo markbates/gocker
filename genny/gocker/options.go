@@ -11,6 +11,8 @@ import (
 type Options struct {
 	GoVersion string
 	GoMods    string
+	SkipGet   bool
+	Keep      bool
 	WithDep   bool
 	Args      []string
 	Path      string
