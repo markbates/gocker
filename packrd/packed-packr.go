@@ -10,7 +10,7 @@ import (
 )
 
 var _ = func() error {
-	const gk = "__packr_global__"
+	const gk = "36a9088a71bc628df2e7a6b3d27a96a6"
 	g := packr.New(gk, "")
 	hgr, err := resolver.NewHexGzip(map[string]string{
 		"4f59bf6e3a17584507bc2e40f6b668e7": "1f8b08000000000000ff64cf414fc23018c6f17b3fc5e361091cf62ebb1af0c270313a4a66807844fada35b2b5a1858bf1bb9b766a4838bd87ff2fcdd3c75636d0f6b81ff4fd2c9bc3bae0a9b65b3e796307640f422c575bd4b22ccb46569b97e5fc8a3556f96476b27dae9e5afcb7f53e74a92ce4fa0d04122236f381c95d02af9fc6d51ca6f88aecafa5b433a1abd8fda676b382b6d01ca04de8ceef74b07d314e2e14bbe2d0ab781354ecc0833f9f18f945cc327c838f9e6f5eca2fc803a820a251a50de34deeea938b5e4da631fc040000ffff87d1ab7b2c010000",
@@ -31,7 +31,7 @@ var _ = func() error {
 	}()
 
 	func() {
-		b := packr.New("../new/templates", "../new/templates")
+		b := packr.New("genny:genny:new", "../new/templates")
 		b.SetResolver("-name-/-name-.go.plush", packr.Pointer{ForwardBox: gk, ForwardPath: "bb890f3a8aa56c497012afb45b9738ad"})
 		b.SetResolver("-name-/-name-_test.go.plush", packr.Pointer{ForwardBox: gk, ForwardPath: "be63988dd6aff95c2a1ff130f81faee9"})
 		b.SetResolver("-name-/options.go.plush", packr.Pointer{ForwardBox: gk, ForwardPath: "56a843f683c28af8d3acb35582da637c"})
