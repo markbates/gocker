@@ -23,7 +23,11 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gobuffalo/genny](https://godoc.org/github.com/gobuffalo/genny)
 
-* [github.com/gobuffalo/plushgen](https://godoc.org/github.com/gobuffalo/plushgen)
+* [github.com/gobuffalo/genny/movinglater/gotools](https://godoc.org/github.com/gobuffalo/genny/movinglater/gotools)
+
+* [github.com/gobuffalo/genny/movinglater/gotools/goimports](https://godoc.org/github.com/gobuffalo/genny/movinglater/gotools/goimports)
+
+* [github.com/gobuffalo/genny/movinglater/gotools/gomods](https://godoc.org/github.com/gobuffalo/genny/movinglater/gotools/gomods)
 
 * [github.com/gobuffalo/github_flavored_markdown](https://godoc.org/github.com/gobuffalo/github_flavored_markdown)
 
@@ -45,7 +49,17 @@ Thank you to the following **GIANTS**:
 
 * [github.com/gobuffalo/packd](https://godoc.org/github.com/gobuffalo/packd)
 
-* [github.com/gobuffalo/packr](https://godoc.org/github.com/gobuffalo/packr)
+* [github.com/gobuffalo/packr/v2](https://godoc.org/github.com/gobuffalo/packr/v2)
+
+* [github.com/gobuffalo/packr/v2/file](https://godoc.org/github.com/gobuffalo/packr/v2/file)
+
+* [github.com/gobuffalo/packr/v2/file/resolver](https://godoc.org/github.com/gobuffalo/packr/v2/file/resolver)
+
+* [github.com/gobuffalo/packr/v2/file/resolver/encoding/hex](https://godoc.org/github.com/gobuffalo/packr/v2/file/resolver/encoding/hex)
+
+* [github.com/gobuffalo/packr/v2/jam/parser](https://godoc.org/github.com/gobuffalo/packr/v2/jam/parser)
+
+* [github.com/gobuffalo/packr/v2/plog](https://godoc.org/github.com/gobuffalo/packr/v2/plog)
 
 * [github.com/gobuffalo/plush](https://godoc.org/github.com/gobuffalo/plush)
 
@@ -56,6 +70,10 @@ Thank you to the following **GIANTS**:
 * [github.com/gobuffalo/plush/parser](https://godoc.org/github.com/gobuffalo/plush/parser)
 
 * [github.com/gobuffalo/plush/token](https://godoc.org/github.com/gobuffalo/plush/token)
+
+* [github.com/gobuffalo/plushgen](https://godoc.org/github.com/gobuffalo/plushgen)
+
+* [github.com/gobuffalo/syncx](https://godoc.org/github.com/gobuffalo/syncx)
 
 * [github.com/gobuffalo/tags](https://godoc.org/github.com/gobuffalo/tags)
 
@@ -78,6 +96,8 @@ Thank you to the following **GIANTS**:
 * [github.com/markbates/gocker](https://godoc.org/github.com/markbates/gocker)
 
 * [github.com/markbates/gocker/genny/gocker](https://godoc.org/github.com/markbates/gocker/genny/gocker)
+
+* [github.com/markbates/gocker/packrd](https://godoc.org/github.com/markbates/gocker/packrd)
 
 * [github.com/markbates/inflect](https://godoc.org/github.com/markbates/inflect)
 
@@ -110,3 +130,11 @@ Thank you to the following **GIANTS**:
 * [golang.org/x/net/html/atom](https://godoc.org/golang.org/x/net/html/atom)
 
 * [golang.org/x/sys/unix](https://godoc.org/golang.org/x/sys/unix)
+
+* [golang.org/x/tools/go/ast/astutil](https://godoc.org/golang.org/x/tools/go/ast/astutil)
+
+* [golang.org/x/tools/imports](https://godoc.org/golang.org/x/tools/imports)
+
+* [golang.org/x/tools/internal/fastwalk](https://godoc.org/golang.org/x/tools/internal/fastwalk)
+
+* [golang.org/x/tools/internal/gopathwalk](https://godoc.org/golang.org/x/tools/internal/gopathwalk)
