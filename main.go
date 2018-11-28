@@ -6,6 +6,7 @@ import (
 	"log"
 
 	"github.com/gobuffalo/genny"
+	"github.com/gobuffalo/logger"
 	"github.com/markbates/gocker/genny/gocker"
 	"github.com/pkg/errors"
 )
@@ -38,6 +39,7 @@ func exec(args []string) error {
 	if options.DryRun {
 		run = genny.DryRunner(ctx)
 	}
+	run.Logger = logger.New(logger.DebugLevel)
 
 	opts := options.Options
 	opts.Args = args
