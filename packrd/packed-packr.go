@@ -26,17 +26,17 @@ var _ = func() error {
 	g.DefaultResolver = hgr
 
 	func() {
-		b := packr.New("../gocker/templates", "../gocker/templates")
-		b.SetResolver("Gockerfile.plush", packr.Pointer{ForwardBox: gk, ForwardPath: "4f59bf6e3a17584507bc2e40f6b668e7"})
-	}()
-
-	func() {
 		b := packr.New("genny:genny:new", "../new/templates")
 		b.SetResolver("-name-/-name-.go.plush", packr.Pointer{ForwardBox: gk, ForwardPath: "bb890f3a8aa56c497012afb45b9738ad"})
 		b.SetResolver("-name-/-name-_test.go.plush", packr.Pointer{ForwardBox: gk, ForwardPath: "be63988dd6aff95c2a1ff130f81faee9"})
 		b.SetResolver("-name-/options.go.plush", packr.Pointer{ForwardBox: gk, ForwardPath: "56a843f683c28af8d3acb35582da637c"})
 		b.SetResolver("-name-/options_test.go.plush", packr.Pointer{ForwardBox: gk, ForwardPath: "91ab460f060e204b86863ca1392680ef"})
 		b.SetResolver("-name-/templates/example.txt.plush", packr.Pointer{ForwardBox: gk, ForwardPath: "67c2b59c8741c3fe3f9db52e4e4a72ed"})
+	}()
+
+	func() {
+		b := packr.New("gocker:genny:gocker", "../gocker/templates")
+		b.SetResolver("Gockerfile.plush", packr.Pointer{ForwardBox: gk, ForwardPath: "4f59bf6e3a17584507bc2e40f6b668e7"})
 	}()
 
 	return nil

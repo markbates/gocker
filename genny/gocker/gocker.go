@@ -17,7 +17,7 @@ func New(opts *Options) (*genny.Generator, error) {
 		return g, errors.WithStack(err)
 	}
 
-	if err := g.Box(packr.New("../gocker/templates", "../gocker/templates")); err != nil {
+	if err := g.Box(packr.New("gocker:genny:gocker", "../gocker/templates")); err != nil {
 		return g, errors.WithStack(err)
 	}
 	ctx := plush.NewContext()
