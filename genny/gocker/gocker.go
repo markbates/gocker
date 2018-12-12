@@ -24,7 +24,7 @@ func New(opts *Options) (*genny.Generator, error) {
 	ctx.Set("opts", opts)
 	g.Transformer(plushgen.Transformer(ctx))
 
-	g.Command(exec.Command("docker", "build", ".", "-f", "gockerfile"))
+	g.Command(exec.Command("docker", "build", ".", "-f", "Gockerfile"))
 
 	if !opts.Keep {
 		g.RunFn(func(r *genny.Runner) error {
