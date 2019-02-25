@@ -26,6 +26,7 @@ func main() {
 	flag.StringVar(&options.GoVersion, "go-version", "latest", "go version to run")
 	flag.StringVar(&options.GoMods, "go-mods", "on", "turn on/off Go Modules")
 	flag.StringVar(&options.Path, "path", "", "path to use in Docker for WORKDIR")
+	flag.StringVar(&options.Script, "script", "", ".sh file to run in docker")
 	flag.Parse()
 
 	if err := exec(flag.Args()); err != nil {

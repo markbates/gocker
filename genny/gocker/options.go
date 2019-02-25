@@ -16,6 +16,7 @@ type Options struct {
 	WithDep   bool
 	Args      []string
 	Path      string
+	Script    string
 }
 
 // Validate that options are usuable
@@ -24,7 +25,7 @@ func (opts *Options) Validate() error {
 		opts = &Options{}
 	}
 
-	if len(opts.Args) == 0 {
+	if len(opts.Args) == 0 && len(opts.Script) == 0 {
 		return errors.New("you must pass arguments")
 	}
 
